@@ -4,33 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Giỏ Hàng Đơn Giản</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>Cửa Hàng Thời Trang 👕</h1>
+        </header>
 
-    <header>
-    </header>
+        <main id="products">
+            <div class="product">
+                <img src="https://placehold.co/200x200/5e81ac/white?text=Áo+Thun" alt="Áo Thun">
+                <h2>Áo Thun Basic</h2>
+                <p data-price="250000">Giá: 250,000₫</p>
+                <button class="add-to-cart" data-name="Áo Thun Basic" data-price="250000">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://placehold.co/200x200/88c0d0/white?text=Quần+Jeans" alt="Quần Jeans">
+                <h2>Quần Jeans Slim-fit</h2>
+                <p data-price="550000">Giá: 550,000₫</p>
+                <button class="add-to-cart" data-name="Quần Jeans Slim-fit" data-price="550000">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://placehold.co/200x200/b48ead/white?text=Mũ+Lưỡi+Trai" alt="Mũ Lưỡi Trai">
+                <h2>Mũ Lưỡi Trai</h2>
+                <p data-price="180000">Giá: 180,000₫</p>
+                <button class="add-to-cart" data-name="Mũ Lưỡi Trai" data-price="180000">Thêm vào giỏ</button>
+            </div>
+        </main>
 
-    <main>
-        <h1></h1>
+        <aside id="cart-container">
+            <h2>Giỏ Hàng Của Bạn 🛒</h2>
+            <ul id="cart-items">
+            </ul>
+            <p id="cart-total"><strong>Tổng cộng: 0₫</strong></p>
+            <button id="clear-cart">Xóa tất cả</button>
+        </aside>
+    </div>
 
-        <h2></h2>
-
-        <img src="duong-dan-toi-hinh-anh.jpg" alt="Mô tả chi tiết về hình ảnh này">
-
-        <ul>
-            <li>Mục 1</li>
-            <li>Mục 2</li>
-            <li>Mục 3</li>
-        </ul>
-
-    </main>
-
-    <footer>
-        <p>Tìm hiểu thêm tại <a href="http://example.com">Trang web ví dụ</a>.</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
